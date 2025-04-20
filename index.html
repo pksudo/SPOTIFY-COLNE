@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/73976990d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="brand"><img src="logo.png" alt="Spotify" />Spotify</li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="songList">
+      <h1>Best of NCS - No Copyright Sounds</h1>
+      <div class="songItemContainer">
+        <!-- Songs will be generated dynamically -->
+      </div>
+    </div>
+    <div class="songBanner"></div>
+  </div>
+
+  <div class="bottom">
+    <input type="range" id="myProgressBar" value="0" min="0" max="100" />
+    <div class="icons">
+      <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+      <i class="fa-regular fa-3x fa-circle-play" id="masterPlay"></i>
+      <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+    </div>
+    <div class="songInfo">
+      <img src="playing.gif" width="32" alt="playing" id="gif" />
+      <span id="currentSongName">Select a song</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
